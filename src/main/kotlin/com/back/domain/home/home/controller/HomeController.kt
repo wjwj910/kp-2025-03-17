@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController
 class HomeController(
     private val memberService: MemberService
 ) {
-    @GetMapping("/member")
+    @GetMapping("/")
     fun main() = "회원 수 : ${memberService.count()}"
 }
